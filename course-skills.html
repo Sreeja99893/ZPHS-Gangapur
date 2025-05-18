@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skills</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f8fb;
+      color: #333;
+      padding: 2rem;
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1f3c88;
+      margin-bottom: 30px;
+      font-weight: 600;
+      animation: slideDown 1s ease-out;
+    }
+
+    .link-card {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 20px auto;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      max-width: 600px;
+    }
+
+    .link-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    a {
+      display: block;
+      color: #007bff;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #0056b3;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes slideDown {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Programming Skills</h1>
+
+  <div class="link-card">
+    <a href="https://www.youtube.com/@freecodecamp" target="_blank">Web Development – FreeCodeCamp YouTube</a>
+  </div>
+
+  <div class="link-card">
+    <a href="https://www.youtube.com/@JennyslecturesCSIT" target="_blank">Programming Language – Jenny’s Lectures [C Language]</a>
+  </div>
+
+  <div class="link-card">
+    <a href="https://www.geeksforgeeks.org/" target="_blank">Best Website for Doubt Clarifications – GeeksforGeeks</a>
+  </div>
+
+  <div class="link-card">
+    <a href="https://www.youtube.com/@ApnaCollegeOfficial" target="_blank">Programming Language - Apna College</a>
+  </div>
+
+  <div class="link-card">
+    <a href="https://www.youtube.com/@sahilandsarra" target="_blank">Programming guidelines - sahi & sarra</a>
+  </div>
+
+</body>
+</html>

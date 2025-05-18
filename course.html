@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Courses | ZPHS Gangapur</title>
+  <link rel="stylesheet" href="/static/course-styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <header class="course-navbar">
+    <div class="course-logo">Courses</div>
+    <nav>
+      <ul class="course-nav-links" id="course-nav-links">
+        <li><a href="course-pyqs.html">PYQs</a></li>
+        <li><a href="course-english.html">English</a></li>
+        <li><a href="course-skills.html">Skills</a></li>
+        <li><a href="course-values.html">Moral Values</a></li>
+      </ul>
+    </nav>
+    <div class="course-menu-toggle" id="course-menu-toggle">&#9776;</div>
+  </header>
+
+  <section class="course-description">
+    <h1>Welcome to the Learning Hub</h1>
+    <p>
+      This platform is thoughtfully divided into three key sections: 10th Class PYQs, English Learning, and Skills After 10th — helping you academically and for your future!
+                             "Each day is a new opportunity to learn"
+    </p>
+  </section>
+
+  <section id="pyqs" class="course-section fade-in">
+    <h2> 10th Class Academics & PYQs</h2>
+    <p>Access board-aligned previous year question papers and important study materials to prepare effectively for your 10th class exams.</p>
+    <p>The 10th grade plays a vital role in shaping a student’s academic foundation and future opportunities. Our "10th Class Academics & PYQs" section is thoughtfully curated to support students in mastering core subjects by providing easy access to syllabus-based study materials, previous year question papers (PYQs), and model tests. These resources not only help in understanding exam patterns but also boost confidence and performance through consistent practice.
+
+         "Practice is the bridge between learning and excellence."
+    </p>
+  </section>
+
+  <section id="english" class="course-section fade-in">
+    <h2> English Classes</h2>
+    <p>Boost your communication skills with grammar lessons, spoken English sessions, and reading practice tailored to school-level learners.</p>
+    <p>
+        Our English Classes are designed to enhance students' reading, writing, speaking, and grammar skills. Through engaging tutorials and practice materials, we help students improve communication for both academic success and real-world use. Whether preparing for exams or building fluency, these resources boost confidence and clarity in English.
+
+        "The more that you read, the more things you will know. The more that you learn, the more places you'll go." — Dr. Seuss
+    </p>
+  </section>
+
+  <section id="skills" class="course-section fade-in">
+    <h2> After 10th Guidance & Skills</h2>
+    <p>
+        After completing 10th grade, students often face the crucial decision of choosing the right path forward. This section offers clear guidance on academic and career choices, helping students understand different streams like science, commerce, and vocational courses. It also includes essential skill-building resources such as communication skills, time management, teamwork, and basic computer and coding literacy. These foundational skills empower students to make informed decisions and prepare confidently for higher education and future careers.
+
+         "The future depends on what you do today." — Mahatma Gandhi
+    </p>
+    <ul>
+      <li> Career guidance and pathways</li>
+      <li> Soft skills like communication & time management</li>
+      <li> Introduction to coding and technology</li>
+    </ul>
+    
+  </section>
+
+  <footer class="course-footer">
+    <p>&copy; 2025 ZPHS Gangapur | All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById("course-menu-toggle");
+    const links = document.getElementById("course-nav-links");
+    toggle.addEventListener("click", () => {
+      links.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>

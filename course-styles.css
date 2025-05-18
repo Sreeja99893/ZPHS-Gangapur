@@ -1,0 +1,127 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #1c1c1c;
+  color: #eee;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-top: 40px;
+  color: #4facfe;
+}
+
+/* Navbar */
+.course-navbar {
+  background: #111;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.course-logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.course-nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.course-nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+  background: linear-gradient(90deg, #4facfe, #00c2fe);
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.course-nav-links li a:hover {
+  background: linear-gradient(90deg, #ffdd00, #ffaa00);
+  color: #1c1c1c;
+}
+
+.course-menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  .course-nav-links {
+    display: none;
+    flex-direction: column;
+    background: #222;
+    padding: 20px;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    border-radius: 10px;
+  }
+
+  .course-nav-links.active {
+    display: flex;
+  }
+
+  .course-menu-toggle {
+    display: block;
+  }
+}
+
+/* Sections */
+.course-description {
+  padding: 40px 20px;
+  text-align: center;
+  background: #2c2c2c;
+  animation: fadeIn 1.5s ease;
+}
+
+.course-section {
+  padding: 60px 20px;
+  margin: 20px;
+  background: #2e2e2e;
+  border-left: 5px solid #4facfe;
+  border-radius: 10px;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation-delay: 0.3s;
+}
+
+/* Footer */
+.course-footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #aaa;
+  margin-top: 40px;
+}

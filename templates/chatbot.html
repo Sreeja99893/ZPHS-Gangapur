@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chatbot</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #f2f2f2, #e0eafc);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      transition: background 0.5s ease;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      max-width: 400px;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    p {
+      color: #555;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .visit-btn {
+      display: inline-block;
+      text-decoration: none;
+      background: rgba(0, 0, 0, 0.6); /* transparent black */
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .visit-btn:hover {
+      filter: brightness(1.2);
+    }
+
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Welcome to ChatGPT</h1>
+    <p>ChatGPT is an AI-powered assistant designed to help you write, learn, code, and explore ideas creatively. Start chatting now!</p>
+
+    <a href="https://www.chatgpt.com" target="_blank" class="visit-btn">Visit ChatGPT</a>
+    <br>
+  </div>
+  </script>
+
+</body>
+</html>

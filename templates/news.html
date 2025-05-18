@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Latest News | ZPHS Gangapur</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #1c1c1c;
+      color: #fff;
+    }
+
+    header {
+      background-color: #000;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #4facfe;
+    }
+
+    .news-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 50px auto;
+      max-width: 800px;
+      padding: 0 20px;
+    }
+
+    .news-card {
+      background: #2c2c2c;
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 30px;
+      width: 100%;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .news-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .news-card h2 {
+      color: #ffaa00;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .news-card p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+      color: #ccc;
+    }
+
+    .news-card a {
+      display: inline-block;
+      text-decoration: none;
+      background: linear-gradient(90deg, #4facfe, #00c2fe);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: 600;
+      transition: background 0.3s ease, transform 0.2s;
+    }
+
+    .news-card a:hover {
+      background: linear-gradient(90deg, #ffaa00, #ff6600);
+      color: #1c1c1c;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: #ccc;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 600px) {
+      .news-card h2 {
+        font-size: 1.4rem;
+      }
+
+      .news-card p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Latest News Updates</h1>
+  </header>
+
+  <div class="news-container">
+    <!-- The Hindu -->
+    <div class="news-card">
+      <h2>The Hindu (English)</h2>
+      <p>Get national and international news in English from The Hindu official site.</p>
+      <a href="https://www.thehindu.com" target="_blank">Visit The Hindu</a>
+    </div>
+
+    <!-- V6 Telugu -->
+    <div class="news-card">
+      <h2>V6 News (Telugu)</h2>
+      <p>Catch the latest Telugu news, live TV, and updates from V6 News.</p>
+      <a href="https://www.v6velugu.com" target="_blank">Visit V6 Telugu News</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 ZPHS Gangapur | Stay Informed, Stay Smart.</p>
+  </footer>
+
+</body>
+</html>
